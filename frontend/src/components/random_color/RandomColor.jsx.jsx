@@ -34,10 +34,7 @@ export default function RandomColor() {
   }, [typeOfColor]);
 
   return (
-    <div
-      className="container"
-      style={{ height: "100vh", width: "100vw", background: color }}
-    >
+    <div style={{ height: "100vh", width: "100vw", background: color }}>
       <button onClick={() => setTypeOfColor("hex")}>Select HEX Color</button>
       <button onClick={() => setTypeOfColor("rgb")}>Select RGB Color</button>
       <button
