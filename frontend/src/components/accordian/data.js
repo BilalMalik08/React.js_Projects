@@ -1,23 +1,28 @@
 const data = [
   {
-    title: "Section 1",
-    content: "Content of section 1",
+    id: "1",
+    question: "What is the capital of France?",
+    answer: "The capital of France is Paris.",
   },
   {
-    title: "Section 2",
-    content: "Content of section 2",
+    id: "2",
+    question: "Who wrote 'Romeo and Juliet'?",
+    answer: "William Shakespeare wrote 'Romeo and Juliet'.",
   },
   {
-    title: "Section 3",
-    content: "Content of section 3",
+    id: "3",
+    question: "What is the chemical symbol for water?",
+    answer: "The chemical symbol for water is H2O.",
   },
   {
-    title: "Section 4",
-    content: "Content of section 4",
+    id: "4",
+    question: "Which planet is known as the Red Planet?",
+    answer: "Mars is known as the Red Planet.",
   },
   {
-    title: "Section 5",
-    content: "Content of section 5",
+    id: "5",
+    question: "Who painted the Mona Lisa?",
+    answer: "Leonardo da Vinci painted the Mona Lisa.",
   },
 ];
 
