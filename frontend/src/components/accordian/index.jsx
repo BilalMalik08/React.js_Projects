@@ -19,7 +19,13 @@ export default function Accordian() {
     const findIndexOfCurrentId = cpyMultiple.indexOf(getCurrentId);
 
     console.log(findIndexOfCurrentId);
+    if (findIndexOfCurrentId === -1) cpyMultiple.push(getCurrentId);
+    else cpyMultiple.splice(findIndexOfCurrentId, 1);
+
+    setMultiSelect(cpyMultiple);
   }
+
+  console.log(selected, multiSelect);
 
   return (
     <div className="wrapper">
@@ -41,9 +47,17 @@ export default function Accordian() {
                 <h3>{dataItem.question}</h3>
                 <span>+</span>
               </div>
-              {selected === dataItem.id ? (
+              {enableMultiSelection
+                ? multiSelect.indexOf(dataItem.id) !== -1 && (
+                    <div className="content">{dataItem.answer}</div>
+                  )
+                : selected === dataItem.id && (
+                    <div className="content">{dataItem.answer}</div>
+                  )}
+              {/* {selected === dataItem.id ||
+              multiSelect.indexOf(dataItem.id) !== -1 ? (
                 <div className="content">{dataItem.answer}</div>
-              ) : null}
+              ) : null} */}
             </div>
           ))
         ) : (
