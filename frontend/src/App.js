@@ -8,13 +8,13 @@ function App() {
   return (
     <div className="App">
       {/* Accordian Component */}
-      {/* <Accordian /> */}
+      <Accordian />
 
       {/* Color Generator Component */}
-      {/* <RandomColor /> */}
+      <RandomColor />
 
       {/* Star Rating Component */}
-      {/* <StarRating noOfStars={10} /> */}
+      <StarRating noOfStars={10} />
 
       {/* Image Slider Component */}
       <ImageSlider
