@@ -4,28 +4,33 @@ import ImageSlider from "./components/image_slider/ImageSlider.jsx";
 import LoadMoreData from "./components/load_more_data/LoadMoreData.jsx";
 import RandomColor from "./components/random_color/RandomColor.jsx";
 import StarRating from "./components/star_rating/StarRating.jsx";
+import TreeView from "./components/tree_view/TreeView.jsx";
+import menu from "./components/tree_view/data.js";
 
 function App() {
   return (
     <div className="App">
       {/* Accordian Component */}
-      <Accordian />
+      {/* <Accordian /> */}
 
       {/* Color Generator Component */}
-      <RandomColor />
+      {/* <RandomColor /> */}
 
       {/* Star Rating Component */}
-      <StarRating noOfStars={10} />
+      {/* <StarRating noOfStars={10} /> */}
 
       {/* Image Slider Component */}
-      <ImageSlider
+      {/* <ImageSlider
         url={"https://picsum.photos/v2/list"}
         page={"1"}
         limit={"10"}
-      />
+      /> */}
 
       {/* Load More Data Component */}
-      <LoadMoreData />
+      {/* <LoadMoreData /> */}
+
+      {/* Tree View Menu Component */}
+      <TreeView menu={menu} />
     </div>
   );
 }
