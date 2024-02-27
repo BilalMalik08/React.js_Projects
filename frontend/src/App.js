@@ -1,6 +1,7 @@
 import "./App.css";
 import Accordian from "./components/accordian/Accordian";
-import ImageSlider from "./components/image-slider/ImageSlider.jsx";
+import ImageSlider from "./components/image_slider/ImageSlider.jsx";
+import LoadMoreData from "./components/load_more_data/LoadMoreData.jsx";
 import RandomColor from "./components/random_color/RandomColor.jsx";
 import StarRating from "./components/star_rating/StarRating.jsx";
 
@@ -22,6 +23,9 @@ function App() {
         page={"1"}
         limit={"10"}
       />
+
+      {/* Load More Data Component */}
+      <LoadMoreData />
     </div>
   );
 }
