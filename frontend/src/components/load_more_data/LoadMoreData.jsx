@@ -3,6 +3,7 @@ import "./loadMoreData.css";
 
 export default function LoadMoreData() {
   const [loading, setLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
   const [products, setProducts] = useState([]);
   const [count, setCount] = useState(0);
   const [disableButton, setDisableButton] = useState(false);
@@ -26,6 +27,7 @@ export default function LoadMoreData() {
     } catch (error) {
       console.log(error);
       setLoading(false);
+      setErrorMessage(error.message);
     }
   }
 
@@ -38,6 +40,8 @@ export default function LoadMoreData() {
   }, [products]);
 
   if (loading) return <div>Loading... Please Wait</div>;
+
+  if (errorMessage) return <div>An unknown error occurred</div>;
 
   return (
     <div className="data-container">

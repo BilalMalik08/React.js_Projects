@@ -26,3 +26,24 @@
     height: 300px;
     width: 300px;
 }
+
+.top-container {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    background-color: #000000;
+}
+
+.scroll-progress-tracking-container {
+    top: 0;
+    height: 10px;
+    width: 100%;
+    background-color: #215aea;
+}
+
+.current-progress-bar {
+    height: 10px;
+    background-color: #e331d8;
+}

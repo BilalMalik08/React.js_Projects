@@ -5,6 +5,7 @@ import LightDarkMode from "./components/light_dark_mode/LightDarkMode.jsx";
 import LoadMoreData from "./components/load_more_data/LoadMoreData.jsx";
 import QrCodeGenerator from "./components/qr_code_generator/QrCodeGenerator.jsx";
 import RandomColor from "./components/random_color/RandomColor.jsx";
+import ScrollIndicator from "./components/scroll_indicator/ScrollIndicator.jsx";
 import StarRating from "./components/star_rating/StarRating.jsx";
 import TreeView from "./components/tree_view/TreeView.jsx";
 import menu from "./components/tree_view/data.js";
@@ -39,6 +40,9 @@ function App() {
 
       {/* Light Dark Mode Component */}
       <LightDarkMode />
+
+      {/* Custom Scroll Indicator Component */}
+      <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} />
     </div>
   );
 }
