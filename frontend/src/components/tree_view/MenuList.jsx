@@ -1,3 +1,4 @@
+import "./treeView.css";
 import MenuItem from "./MenuItem";
 
 export default function MenuList({ list = [] }) {

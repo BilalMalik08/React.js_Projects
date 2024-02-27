@@ -11,23 +11,23 @@ function App() {
   return (
     <div className="App">
       {/* Accordian Component */}
-      {/* <Accordian /> */}
+      <Accordian />
 
       {/* Color Generator Component */}
-      {/* <RandomColor /> */}
+      <RandomColor />
 
       {/* Star Rating Component */}
-      {/* <StarRating noOfStars={10} /> */}
+      <StarRating noOfStars={10} />
 
       {/* Image Slider Component */}
-      {/* <ImageSlider
+      <ImageSlider
         url={"https://picsum.photos/v2/list"}
         page={"1"}
         limit={"10"}
-      /> */}
+      />
 
       {/* Load More Data Component */}
-      {/* <LoadMoreData /> */}
+      <LoadMoreData />
 
       {/* Tree View Menu Component */}
       <TreeView menu={menu} />
