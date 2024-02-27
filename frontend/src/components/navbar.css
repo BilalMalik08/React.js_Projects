@@ -1,0 +1,47 @@
+.navbar-row1 {
+    height: 10vh;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+
+}
+
+.navbar {
+    z-index: 1;
+    position: fixed;
+    background-color: #074b9d9f;
+    height: 10vh;
+    z-index: 1;
+
+}
+
+.logo {
+    height: 50px;
+    margin-left: 15px;
+
+}
+
+.nav-item .nav-link {
+    color: black;
+}
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 820px) {
+    .navbar-row1 {
+        height: 0vh;
+    }
+
+    .d-flex {
+        display: flex !important;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .d-flex {
+        display: flex !important;
+        margin-bottom: 20px;
+    }
+}
