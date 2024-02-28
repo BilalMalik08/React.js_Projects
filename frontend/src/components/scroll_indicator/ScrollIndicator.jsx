@@ -42,7 +42,7 @@ export default function ScrollIndicator({ url }) {
       document.documentElement.scrollHeight ||
       document.documentElement.clientHeight;
 
-    setScrollPercentage((howMuchScrolled / height) * 100);
+    setScrollPercentage((howMuchScrolled / height) * 105);
   }
 
   useEffect(() => {
